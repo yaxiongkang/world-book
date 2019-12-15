@@ -29,7 +29,7 @@ export default {
     // 跳转index 主页
     toIndex(){
       wx.navigateTo({
-        url:"/apages/index/main"
+        url:"/pages/index/main"
       })
     }
   },
