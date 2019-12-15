@@ -1,11 +1,37 @@
 {
   "pages": [
-    "pages/firstView/main"
+    "pages/index/main",
+    "pages/detail/main",
+    "pages/firstView/main",
+    "pages/my/main",
+    "pages/search/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "世界图书",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "list":[
+      {
+         "pagePath":"pages/index/main",
+         "iconPath":"/static/images/book.png",
+         "selectedIconPath":"/static/images/book-active.png",
+         "text":"首页"
+      },
+      {
+        "pagePath":"pages/search/main",
+        "iconPath":"/static/images/todo.png",
+         "selectedIconPath":"/static/images/todo-active.png",
+        "text":"搜索"
+      },
+      {
+        "pagePath":"pages/my/main",
+        "iconPath":"/static/images/me.png",
+         "selectedIconPath":"/static/images/me-active.png",
+        "text":"个人中心"
+      }
+    ]
   }
 }

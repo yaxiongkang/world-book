@@ -5,7 +5,7 @@
         <img :src="item" alt />
       </swiper-item>
     </swiper>
-    <button class="start-btn" v-show="index == 4">开始体验</button>
+    <button @click="toIndex" class="start-btn" v-show="index == 4">开始体验</button>
   </div>
 </template>
 <script>
@@ -25,7 +25,12 @@ export default {
   methods: {
     handleChange(event){
       this.index = event.mp.detail.current
-      console.log(event)
+    },
+    // 跳转index 主页
+    toIndex(){
+      wx.navigateTo({
+        url:"/apages/index/main"
+      })
     }
   },
 };
