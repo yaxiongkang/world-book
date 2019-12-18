@@ -29,7 +29,7 @@ export default {
     // 跳转index 主页
     toIndex(){
       wx.navigateTo({
-        url:"/pages/index/main"
+        url:'/pages/index/main'
       })
     }
   },
@@ -56,7 +56,8 @@ export default {
     text-align: center;
     line-height: 80rpx;
     margin-left: -140rpx;
-    background-color: rgba(255,255, 255, .5)
+    background-color: rgba(255,255, 255, .5);
+    z-index: 15;
   }
 }
 </style>

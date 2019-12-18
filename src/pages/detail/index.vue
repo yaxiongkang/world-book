@@ -12,7 +12,7 @@
         <p>价格:{{bookItem.price}}</p>
       </div>
     </div>
-    <button class="shareBtn">分享给好友</button>
+    <button class="shareBtn" open-type="share">分享给好友</button>
     <!-- 简介 -->
     <div class="content">
       <article>
@@ -40,7 +40,14 @@ export default {
 		wx.setNavigationBarTitle({
 			title:this.bookItem.title
 		})
-	},
+  },
+  //分享
+  onShareAppMessage(res){
+    return {
+      title:"世界图书",
+      path:"pages/detail/main"
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
