@@ -4,5 +4,11 @@
     "dependencies": {
         "koa": "^2.11.0",
         "koa-router": "^7.4.0"
+    },
+    "scripts": {
+        "start":"nodemon server.js"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
     }
 }
